@@ -4,7 +4,7 @@ import { Hono } from "hono";
 const app = new Hono();
 
 app.get("/", (c) => {
-  return c.text("Hello HONO in Hono!");
+  return c.text("Hello HONOS in Hono!");
 });
 
 serve(
