@@ -32,7 +32,7 @@ export default function Home() {
           priority
         />
         <ol>
-          <li>The NEXT APP NOW WORKS AS EXPECTED.</li>
+          <li>The NEXT APP NOW WORKS</li>
           <li>Save and see your changes instantly.</li>
         </ol>
 
