@@ -3,9 +3,17 @@ import { Hono } from "hono";
 
 const app = new Hono();
 
-app.get("/", (c) => {
-  return c.text("Hello HONOS in Hono!");
-});
+const router = app
+  .get("/", (c) => {
+    return c.text("Hello HONOS in Hono!");
+  })
+  .post("/", (c) => {
+    return c.json({
+      message: "Hello HONOS in Hono!",
+    });
+  });
+
+export type AppType = typeof router;
 
 serve(
   {
