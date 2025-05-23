@@ -20,9 +20,18 @@ const ThemeImage = (props: Props) => {
   );
 };
 
-const client = hc<AppType>;
+const client = hc<AppType>("http:localhost:4000");
 
-export default function Home() {
+const stuff = async () => {
+  const resp = await client.index.$get();
+  const stuff = await resp.text();
+  console.log(stuff);
+  return stuff;
+};
+
+stuff();
+
+export default async function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
