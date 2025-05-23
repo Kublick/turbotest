@@ -32,7 +32,7 @@ export default function Home() {
           priority
         />
         <ol>
-          <li>The NEXT APP WAS UPDATED !!!.</li>
+          <li>The NEXT APP WAS REVERTED !!!.</li>
           <li>Save and see your changes instantly.</li>
         </ol>
 
