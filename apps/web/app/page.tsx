@@ -20,7 +20,7 @@ const ThemeImage = (props: Props) => {
   );
 };
 
-const client = hc<AppType>("http:localhost:4000");
+const client = hc<AppType>("https://apiweb.coolify.aumentapacientes.com/");
 
 const stuff = async () => {
   const resp = await client.index.$get();
